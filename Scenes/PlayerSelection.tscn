@@ -18,7 +18,7 @@ script = ExtResource("4_mpou1")
 [node name="RoundController" type="Node" parent="." unique_id=1558029353]
 script = ExtResource("4_2ny7y")
 availableMinigames = Array[PackedScene]([ExtResource("5_f0lok")])
-winsNeededToFinish = 2
+winsNeededToFinish = 1
 
 [node name="MinigameContainer" type="Node" parent="." unique_id=741273415]
 
