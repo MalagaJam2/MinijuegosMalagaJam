@@ -44,6 +44,7 @@ folder_colors={
 "res://Graphics/": "pink",
 "res://Materials/": "orange",
 "res://Minigames/": "pink",
+"res://Models/": "red",
 "res://Scenes/": "purple",
 "res://Scripts/": "teal",
 "res://Shaders/": "yellow",
