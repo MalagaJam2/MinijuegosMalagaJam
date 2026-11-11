@@ -18,6 +18,8 @@ Estamos usando la versión 4.7.2
 ## Tutorial de como implementar nuevos minijuegos
 > Además de este tutorial, también teneis una versión en video: https://youtu.be/sFes9TlMNf4
 
+**⚠️ Para poder subir tus cambios, debes hacer un FORK del repositorio, sino, no te dejará pushear tu rama y hacer un pull request. ⚠️**
+
 Para implementar nuevos minijuegos, tendrás que descargarte el proyecto, crear una rama partiendo desde develop y ahí ya podrás trabajar.<br>
 Es recomendable que la rama tenga un nombre estilo: **minigames/NombreMinijuego** para tener los minijuegos agrupados en una sección "minigames".<br>
 Crea una carpeta dentro de la carpeta raíz **Minijuegos** con el nombre de tu minijuego Ejemplo: "Minijuego de saltar a la comba".<br>
