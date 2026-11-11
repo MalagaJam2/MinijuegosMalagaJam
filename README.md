@@ -7,6 +7,9 @@ Las funcionalidades del juego en general se irán aumentando a lo largo de el ti
 
 Crear un juego de minijuegos de 2 a 4 jugadores donde 1 persona gana tras haber conseguido X victorias (siendo X configurable dentro del juego)
 
+## Versión de Godot
+Estamos usando la versión 4.7.2
+
 ## Requisitos de los minijuegos
 - Deben ser minijuegos de entre 7 a 15 segundos
 - Deben de poder jugarse con un único botón por jugador (Vale contar la pulsación, dejar de pulsar el botón o mantener el botón)
