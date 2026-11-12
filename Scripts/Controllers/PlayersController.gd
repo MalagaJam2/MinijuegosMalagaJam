@@ -2,6 +2,7 @@ extends Node
 
 signal PlayerSelectionChangeState(state: bool)
 var activePlayers: Array[bool] = [false, false, false, false]
+var playersNickName: Dictionary[int,String]
 var activePlayerCount: int = 0
 
 
@@ -21,6 +22,8 @@ func PlayerSelect(playerId: int) -> void:
 		return
 		
 	activePlayers[playerId] = true;
+	var temporalNickName: String = "Player %s" % (playerId + 1)
+	playersNickName.set(playerId,temporalNickName)
 	activePlayerCount+=1
 	print("Jugador %d se ha unido" % playerId)
 
@@ -38,3 +41,9 @@ func GetCurrentPlayersIds() -> Array[int]:
 			playerIds.append(playerId)
 	
 	return playerIds;
+
+func GetPlayerNickName(playerId:int) -> String:
+	if playersNickName.has(playerId):
+		return playersNickName[playerId]
+	else:
+		return ""

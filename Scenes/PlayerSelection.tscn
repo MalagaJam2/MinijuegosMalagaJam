@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cpdei0c4gficn" path="res://Sprites/GenericButton.png" id="1_hqt01"]
 [ext_resource type="Script" uid="uid://dqd747do6jri1" path="res://Scripts/PlayerButton.gd" id="2_2ny7y"]
 [ext_resource type="Script" uid="uid://cogkluld14x1i" path="res://Scripts/Controllers/RoundController.gd" id="4_2ny7y"]
-[ext_resource type="Script" uid="uid://c8xhspffwdh2y" path="res://Scripts/StartButton.gd" id="4_mpou1"]
+[ext_resource type="Script" uid="uid://c8xhspffwdh2y" path="res://Scripts/Controllers/PlayerSelectionController.gd" id="4_mpou1"]
 [ext_resource type="Script" uid="uid://vehy28ho4b6n" path="res://Scripts/PlayerSelectionContent.gd" id="4_y4jts"]
 [ext_resource type="PackedScene" uid="uid://cjrtfysm3veyl" path="res://Minigames/ServingFoodMinigame/ServingFoodMinigame.tscn" id="5_f0lok"]
 [ext_resource type="Script" uid="uid://bcnuavmcwbljo" path="res://Scripts/TransitionEffect.gd" id="7_eub5x"]
@@ -12,8 +12,9 @@
 
 [node name="PlayerSelection" type="Node2D" unique_id=1452936896]
 
-[node name="StartButton" type="Node" parent="." unique_id=730089682]
+[node name="PlayerSelectionController" type="Node" parent="." unique_id=730089682 node_paths=PackedStringArray("pressSpaceToStartText")]
 script = ExtResource("4_mpou1")
+pressSpaceToStartText = NodePath("../PlayerSelectionContent/PressSpaceToStart")
 
 [node name="RoundController" type="Node" parent="." unique_id=1558029353]
 script = ExtResource("4_2ny7y")
@@ -25,7 +26,7 @@ winsNeededToFinish = 1
 [node name="PlayerSelectionContent" type="Node2D" parent="." unique_id=1639066307]
 script = ExtResource("4_y4jts")
 
-[node name="Label" type="Label" parent="PlayerSelectionContent" unique_id=1416738455]
+[node name="PressToJoin" type="Label" parent="PlayerSelectionContent" unique_id=1416738455]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -39,6 +40,24 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 60
 text = "Pulsa un botón para unirte"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PressSpaceToStart" type="Label" parent="PlayerSelectionContent" unique_id=1291979323]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 573.0
+offset_top = 800.0
+offset_right = 1350.0
+offset_bottom = 949.00006
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "Pulsa espacio para empezar"
 horizontal_alignment = 1
 vertical_alignment = 1
 
