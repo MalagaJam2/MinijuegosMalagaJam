@@ -208,12 +208,13 @@ position = Vector2(-2513, 36)
 [node name="Sprite2D" type="Sprite2D" parent="PeopleLine/Person 12" unique_id=1948641668]
 texture = ExtResource("19_fs404")
 
-[node name="FoodButtons" type="Node" parent="." unique_id=2141274748 node_paths=PackedStringArray("playerButtonPosition", "buttonFoodSprites", "playerPlates", "buttonRedCross")]
+[node name="FoodButtons" type="Node" parent="." unique_id=2141274748 node_paths=PackedStringArray("playerButtonPosition", "buttonFoodSprites", "playerPlates", "buttonRedCross", "playerNickNamesLabels")]
 script = ExtResource("9_jcifq")
 playerButtonPosition = [NodePath("Player1FoodPosition"), NodePath("Player2FoodPosition"), NodePath("Player3FoodPosition"), NodePath("Player4FoodPosition")]
 buttonFoodSprites = [NodePath("Patatas"), NodePath("Palmera"), NodePath("Tortelinis"), NodePath("Pizza")]
 playerPlates = [NodePath("Player1"), NodePath("Player2"), NodePath("Player3"), NodePath("Player4")]
 buttonRedCross = [NodePath("CruzRoja"), NodePath("CruzRoja2"), NodePath("CruzRoja3"), NodePath("CruzRoja4")]
+playerNickNamesLabels = [NodePath("Player1/PlayerName 1"), NodePath("Player2/PlayerName 2"), NodePath("Player3/PlayerName 3"), NodePath("Player4/PlayerName 4")]
 playerEliminatedColor = Color(0.26438904, 0.264389, 0.264389, 1)
 
 [node name="Player1FoodPosition" type="Node2D" parent="FoodButtons" unique_id=1494374079]
@@ -240,6 +241,22 @@ texture = ExtResource("25_3r4de")
 z_index = 7
 texture = ExtResource("26_fg0o6")
 
+[node name="PlayerName 1" type="Label" parent="FoodButtons/Player1" unique_id=875617659]
+z_index = 7
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 160.695
+offset_right = 20.0
+offset_bottom = 183.69505
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
+
 [node name="Player2" type="Node2D" parent="FoodButtons" unique_id=1072528551]
 position = Vector2(784, 1321)
 
@@ -251,6 +268,22 @@ texture = ExtResource("25_3r4de")
 [node name="Player2Plate" type="Sprite2D" parent="FoodButtons/Player2" unique_id=1271649935]
 z_index = 7
 texture = ExtResource("27_xcjvp")
+
+[node name="PlayerName 2" type="Label" parent="FoodButtons/Player2" unique_id=1276875248]
+z_index = 7
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 160.695
+offset_right = 20.0
+offset_bottom = 183.69505
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
 
 [node name="Player3" type="Node2D" parent="FoodButtons" unique_id=289014883]
 position = Vector2(1229, 1316)
@@ -264,6 +297,22 @@ texture = ExtResource("25_3r4de")
 z_index = 7
 texture = ExtResource("28_hty1k")
 
+[node name="PlayerName 3" type="Label" parent="FoodButtons/Player3" unique_id=108543045]
+z_index = 7
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 160.695
+offset_right = 20.0
+offset_bottom = 183.69505
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
+
 [node name="Player4" type="Node2D" parent="FoodButtons" unique_id=1443537546]
 position = Vector2(1660, 1306)
 
@@ -275,6 +324,22 @@ texture = ExtResource("25_3r4de")
 [node name="Player4Plate" type="Sprite2D" parent="FoodButtons/Player4" unique_id=1836297744]
 z_index = 7
 texture = ExtResource("29_g2jy6")
+
+[node name="PlayerName 4" type="Label" parent="FoodButtons/Player4" unique_id=227516674]
+z_index = 7
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 160.695
+offset_right = 20.0
+offset_bottom = 183.69505
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 60
 
 [node name="CruzRoja" type="Sprite2D" parent="FoodButtons" unique_id=398958773]
 z_index = 14

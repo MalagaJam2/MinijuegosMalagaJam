@@ -4,6 +4,7 @@ class_name MinigameActionButton
 @export var buttonFoodSprites : Array[Sprite2D]
 @export var playerPlates : Array[Node2D]
 @export var buttonRedCross : Array[Sprite2D]
+@export var playerNickNamesLabels : Array[Label]
 
 @export var playerEliminatedColor : Color
 
@@ -14,6 +15,7 @@ func SetButtonSprites(playerFoods: Dictionary[int,String], foodIndex: Dictionary
 		if playerFoods.has(index):
 			var foodSpriteIndex = foodIndex[playerFoods[index]]
 			playerPlates[index].show()
+			playerNickNamesLabels[index].text = PlayersController.GetPlayerNickName(index)
 			buttonFoodSprites[foodSpriteIndex].show()
 			var position = playerButtonPosition[index].global_position
 			buttonRedCross[index].hide()
